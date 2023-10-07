@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Pj Ellis - Module 11 -->
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+  <description>My library of tag files</description>
+  <tlib-version>1.0</tlib-version>
+  <short-name>ellistag</short-name>
+  
+  <tag>
+    <description>Create table</description>
+    <display-name>create</display-name>
+    <name>create</name>
+    <tag-class>ellisMod12Bean.CreateTable</tag-class>
+    <body-content>empty</body-content>
+  </tag> 
+   
+  <tag>
+    <description>Display table</description>
+    <display-name>display</display-name>
+    <name>display</name>
+    <tag-class>ellisMod12Bean.DisplayTable</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+		<name>table</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>    
+  </tag>
+
+   <tag>
+    <description>Add User</description>
+    <display-name>addUser</display-name>
+    <name>addUser</name>
+    <tag-class>ellisMod12Bean.AddUser</tag-class>
+    <body-content>empty</body-content>
+	<attribute>
+		<name>userEmail</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>firstName</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>lastName</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>userPhone</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>userAge</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>userEye</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>userHair</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>
+	<attribute>
+		<name>userFavFood</name>
+		<rtexprvalue>true</rtexprvalue>
+		<type>java.lang.String</type>			
+	</attribute>    
+  </tag>
+  </taglib>
